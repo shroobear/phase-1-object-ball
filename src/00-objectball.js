@@ -178,7 +178,7 @@ function bigShoeRebounds() {
             playerWithBiggestShoe = player;
         }
     }
-    return allPlayers()[playerWithBiggestShoe].rebounds;
+    return `The player with the largest shoe, ${playerWithBiggestShoe}, with a size ${biggestShoe} shoe, collected ` + allPlayers()[playerWithBiggestShoe].rebounds + `rebounds.`;
 }
 
 //bonus questions
@@ -223,7 +223,7 @@ function winningTeam() {
 
 function playerWithLongestName() {
     let longestName = ''
-    let longestPlayer = 
+    let longestPlayer = null
     const game = gameObject()
     for(const team in game){
         for (const player in game[team].players) {
